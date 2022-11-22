@@ -7,12 +7,7 @@ const StateContext = createContext();
 export const ContextProvider = ({ children }) => {
     const [counter, setCounter] = useState(0)
 
-    const handleClick1 = () => {
-        setCounter(counter + 1)
-      }
-      const handleClick2 = () => {
-        setCounter(counter - 1)
-      }
+
       
 
   return (
@@ -20,8 +15,7 @@ export const ContextProvider = ({ children }) => {
       value={{
         counter,
         setCounter,
-        handleClick1,
-        handleClick2
+  
    
       }}
     >
